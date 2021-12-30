@@ -1,0 +1,128 @@
+doctype html
+html(lang='pt-br')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Dino Tech Software')
+        meta(name='author', content='Dino Tech Software')
+
+        title Dino Tech - Software House
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header#painel.py-5
+                .container.px-5
+                    .row.gx-5.align-items-center.justify-content-center
+                        .col-lg-8.col-xl-7.col-xxl-6
+                            .my-5.text-center.text-xl-start
+                                h1.display-5.fw-bolder.mb-2 Softwares sob medida!
+                                p.lead.fw-normal.mb-4 Nós trabalhamos aliando a tecnologia ao seu negócio. Unindo necessidade com software de qualidade e o gerenciamento de projetos nas suas operações automatizando seu negócio de maneira digital.
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xl-start
+                                    a.btn.btn-success.btn-lg.px-4.me-sm-3(href='#features') Vamos Começar
+                                    a.btn.btn-outline-light.btn-lg.px-4(href='#!') Entenda mais
+                        .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center
+                            img.img-fluid.rounded-3.my-5(src='assets/sembackground.png', alt='...')
+
+            // Features section
+            section#features.py-5
+                .container.px-5.my-5
+                    .row.gx-5
+                        .col-lg-4.mb-5.mb-lg-0
+                            h2.fw-bolder.mb-0 Especialistas em todos os setores.
+                        .col-lg-8
+                            .row.gx-5.row-cols-1.row-cols-md-2
+                                .col.mb-5.h-100
+                                    .feature.bg-success.bg-gradient.text-white.rounded-3.mb-3
+                                        i.bi.bi-phone
+                                    h2.h5 Aplicativos Mobiles(Multiplataformas)
+                                    p.mb-0
+                                        | Além de desenvolvermos apps para Android e iOS (iPhones, iPad e iPod), consideramos nos projetos de aplicativos também a parte gerencial, afinal não adianta ter o aplicativo sem poder gerenciar informações.
+                                .col.mb-5.h-100
+                                    .feature.bg-success.bg-gradient.text-white.rounded-3.mb-3
+                                        i.bi.bi-window
+                                    h2.h5 Desktop Apps
+                                    p.mb-0
+                                        | Os aplicativos de desktop são desenvolvidos para rodar em um sistema operacional específico, como Windows, Mac ou Linux. Os aplicativos de desktop são projetados para serem executados em um ambiente isolado, portanto, têm menos problemas de segurança. A capacidade de trabalhar com ou sem uma conexão com a Internet.
+                                .col.mb-5.mb-md-0.h-100
+                                    .feature.bg-success.bg-gradient.text-white.rounded-3.mb-3
+                                        i.bi.bi-globe
+                                    h2.h5 Desenvolvimento Web
+                                    p.mb-0
+                                        | Utilizamos ferramentas modernas para desenvolvimento de toda aplicação, permitindo que a implementação e qualquer manutenção necessária seja mais ágil.
+                                .col.h-100
+                                    .feature.bg-success.bg-gradient.text-white.rounded-3.mb-3
+                                        i.bi.bi-people
+                                    h2.h5 Consultorias
+                                    p.mb-0
+                                        | Consultoria de gerenciamento de projetos de software desde a documentação até o produto final. Para você que precisa sempre desenvolver e quer uma equipe especializada.
+
+            // Testimonial section
+            .py-5.bg-dark
+                .container.px-5.my-5
+                    .row.gx-5.justify-content-center
+                        .col-lg-10.col-xl-7
+                            .text-center
+                                .fs-4.mb-4.fst-italic.text-light "A criatividade é pensar coisas novas. A inovação é fazer coisas novas."
+                                .d-flex.align-items-center.justify-content-center
+                                    .fw-bold.text-light
+                                        | Theodore Levitt
+                                        span.fw-bold.text-success.mx-1 /
+                                        | Economista
+
+            // Blog preview section
+            section.py-5
+                .container.px-5.my-5
+                    .row.gx-5.justify-content-center
+                        .col-lg-8.col-xl-6
+                            .text-center
+                                h2.fw-bolder Transformando negócios
+                                p.lead.fw-normal.text-muted.mb-5 Modelo de gestão enxuto e humanizado garantindo uma alta performance dos projetos.
+                    .row.gx-5
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='assets/creative.jpg', alt='...')
+                                .card-body.p-4
+                                    h5.card-title.mb-3 Processo Criativo para a Concepção de Sistemas
+                                    p.card-text.mb-0
+                                        | Usamos uma abordagem criativa para solucionar problemas que têm o ser humano como foco, alinhando o desejo e as necessidades do usuário consumidor à geração de valor para o negócio.
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='assets/ageis.jpg', alt='...')
+                                .card-body.p-4
+                                    h5.card-title.mb-3 Desenvolvimento com Métodos Ágeis
+                                    p.card-text.mb-0
+                                        | Utilizamos metodologias que trazem maior flexibilidade e dinamismo ao desenvolvimento de software gerando maior capacidade de garantir a satisfação do consumidor com entregas mais rápidas de forma contínua.
+        
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='assets/infra.jpg', alt='...')
+                                .card-body.p-4
+                                    h5.card-title.mb-3 Qualidade, Sustentação e Infraestrutura
+                                    p.card-text.mb-0
+                                        | Realizamos a gestão das condições necessárias para que as soluções sejam mantidas, operadas e evoluídas de forma sustentável e viável. Mantemos o ecossistema e a infraestrutura de TI, garantindo total disponibilidade do negócio.
+
+                    // Call to action
+                    aside.bg-success.bg-gradient.rounded-3.p-4.p-sm-5.mt-5
+                        .d-flex.align-items-center.justify-content-between.flex-column.flex-xl-row.text-center.text-xl-start
+                            .mb-4.mx-xl-4
+                                .fs-3.fw-bold.text-white Coloque seu negócio em um próximo nível, e deixe a gente te ajudar
+                            .mx-xl-4
+                                    button#button-newsletter.btn.btn-lg.btn-outline-light.fs-3(type='button') Contatos
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

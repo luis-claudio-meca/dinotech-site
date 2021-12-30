@@ -1,0 +1,128 @@
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Resets for body and html height for sticky footer
+body,
+html {
+    height: 100%;
+}
+
+// Custom SCSS for feature component with Bootstrap icon
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+// Background image for featured blog post
+.bg-featured-blog {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 15rem;
+}
+
+#painel {
+    background-color: #100F0D;
+}
+
+footer {
+    background-color: #100F0D;
+    color: #c0ffa9;
+}
+
+#navbar {
+    background-color: #100F0D;
+}
+
+#navbar .nav-link {
+    color: #c0ffa9;
+}
+
+section {
+    cursor: default;
+}
+
+#whatsapp {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+#whatsapp:hover {
+    z-index: 9999;
+    transform: scale(1.5);
+}
+
+#instagram {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+#instagram:hover {
+    z-index: 9999;
+    transform: scale(1.5);
+}
+
+section .card {
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+section .card:hover {
+    z-index: 9999;
+    transform: scale(1.1);
+}
+
+.navbar-toggler  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(132, 252, 128, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border-color: rgb(132, 252, 128);
+}
+
+
+
+#navbar .nav-link:hover {
+    color: #fff; //green
+    background-color: #198754;
+}
+
+h1 {
+    color: #7ed957;
+}
+h2 {
+    color: #7ed957;
+}
+
+p {
+    color: #6a886d;
+}
+
+#painel .container {
+    border-style: solid;
+    color: white;
+    border-width: 3px;
+    padding: 10px;
+    border-image: linear-gradient(45deg, #74fd82, #4ef506) 10;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    box-shadow: 9px 7px 5px rgba(136, 255, 107, 0.77);
+}
+
+
+
+
+#title {
+    color: #7ed957;
+    font-weight: bold;
+    font-family: system-ui;
+    font-size: 16pt;
+}

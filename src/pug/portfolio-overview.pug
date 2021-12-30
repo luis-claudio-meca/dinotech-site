@@ -1,0 +1,50 @@
+doctype html
+html(lang='pt-br')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Dino Tech Software')
+        meta(name='author', content='Dino Tech Software')
+
+        title Dino Tech - Software House
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5.my-5
+                    .text-center.mb-5
+                        h1.fw-bolder Nossos Clientes e Parceiros
+                        p.lead.fw-normal.text-muted.mb-0 Desenvolvimento de software, site e aplicativos mobile
+
+                    .row.gx-5
+                        .col-lg-6
+                            .position-relative.mb-5
+                                img.img-fluid.rounded-3.mb-3(src='assets/chama.jpg', alt='...')
+                                a.h3.fw-bolder.text-decoration-none.link-dark.stretched-link(href='portfolio-item.html') Chama Curch
+                        .col-lg-6
+                            .position-relative.mb-5
+                                img.img-fluid.rounded-3.mb-3(src='assets/rabelo.jpg', alt='...')
+                                a.h3.fw-bolder.text-decoration-none.link-dark.stretched-link(href='#!') Agência Rabelo
+            
+            section.py-5.bg-dark
+                .container.px-5.my-5.text-center
+                    h2.display-4.fw-bolder.mb-4 Vamos construir seu projeto juntos!
+                    a.btn.btn-lg.btn-success(href='contact.html') Contato
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

@@ -1,0 +1,89 @@
+doctype html
+html(lang='pt-br')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Dino Tech Software')
+        meta(name='author', content='Dino Tech Software')
+
+        title Dino Tech - Software House
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header.py-5
+                .container.px-5
+                    .row.justify-content-center
+                        .col-lg-8.col-xxl-6
+                            .my-5
+                                h1.fw-bolder.text-center.mb-3 Dino Tech - Software House
+                                p.lead.fw-normal.text-justify.mb-4 Somos uma "Fábrica de Software" formada por um time multidisciplinar que cria produtos digitais eficazes, feitos sob medida para cada um de nossos clientes. Temos uma super habilidade de entender a necessidade e a realidade das empresas que atendemos e utilizamos as tecnologias mais conceituadas e modernas para alcançar os resultados almejados. Para nós cada cliente é único e a nossa missão é desenvolver a melhor solução para o seu negócio.
+                               
+
+            // About section one
+            section.py-5.bg-dark#scroll-target
+                .container.px-5.my-5
+
+                    .row.gx-5.align-items-center
+                        .col-lg-6
+                            img.img-fluid.rounded.mb-5.mb-lg-0(src='assets/objetivo.jpg', alt='...')
+                        .col-lg-6
+                            h2.fw-bolder Nossos valores e objetivos
+                            p.lead.fw-normal.text-light.mb-0 Acreditamos em transformar negócios a curto e longo prazo, e temos como objetivo construir produtos e soluções que fazem a diferença desde a primeira entrega.<br><b>Somos mutáveis</b> - Adaptamo-nos com facilidade a novos desafios e necessidades.<br> <b>Somos transformadores </b> - enfrentamos o dia a dia com criatividade e agilidade.<br><b>Somos potencializadores</b> - entendemos necessidades e desenvolvemos em conjunto.<br> É através do indivíduo que a sociedade se transforma. É ele quem tem a necessidade e cria, assim a oportunidade e geração de conhecimento, transformação e inovação.
+
+            // About section two
+            section.py-5
+                .container.px-5.my-5
+
+                    .row.gx-5.align-items-center
+                        .col-lg-6.order-first.order-lg-last
+                            img.img-fluid.rounded.mb-5.mb-lg-0(src='assets/planejamento.jpg', alt='...')
+                        .col-lg-6
+                            h2.fw-bolder Time de especialistas performáticos
+                            p.lead.fw-normal.text-muted.mb-0 Nossa equipe possui experiência e um repertório variado de talentos que, quando combinados, produzem uma mistura explosiva de resultados para o seu projeto. Somos um time multidisciplinar, capacitado e focado no entendimento do negócio de cada cliente para construção de soluções para qualquer tipo de segmento de mercado.
+
+
+            //- // Team members section
+            //- section.py-5.bg-light
+            //-     .container.px-5.my-5
+            //-         .text-center
+            //-             h2.fw-bolder Our team
+            //-             p.lead.fw-normal.text-muted.mb-5 Dedicated to quality and your success
+            //-         .row.gx-5.row-cols-1.row-cols-sm-2.row-cols-xl-4.justify-content-center
+            //-             .col.mb-5.mb-5.mb-xl-0
+            //-                 .text-center
+            //-                     img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d', alt='...')
+            //-                     h5.fw-bolder Ibbie Eckart
+            //-                     .fst-italic.text-muted Founder &amp; CEO
+            //-             .col.mb-5.mb-5.mb-xl-0
+            //-                 .text-center
+            //-                     img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d', alt='...')
+            //-                     h5.fw-bolder Arden Vasek
+            //-                     .fst-italic.text-muted CFO
+            //-             .col.mb-5.mb-5.mb-sm-0
+            //-                 .text-center
+            //-                     img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d', alt='...')
+            //-                     h5.fw-bolder Toribio Nerthus
+            //-                     .fst-italic.text-muted Operations Manager
+            //-             .col.mb-5
+            //-                 .text-center
+            //-                     img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d', alt='...')
+            //-                     h5.fw-bolder Malvina Cilla
+            //-                     .fst-italic.text-muted CTO
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
